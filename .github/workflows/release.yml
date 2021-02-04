@@ -7,6 +7,7 @@ on:
 jobs:
 
   release:
+    if: github.repository == 'antony-ramos/gokit-test'
     name: Build with go ${{ matrix.go_version }} on ${{ matrix.os }} and upload
     runs-on: ${{ matrix.os }}
 
